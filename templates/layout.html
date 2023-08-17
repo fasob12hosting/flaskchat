@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - Myanmar Pioneer University (MPU)</title>
+    <link rel="stylesheet" type="text/css" href="/static/content/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/static/content/site.css" />
+    <script src="/static/scripts/modernizr-2.6.2.js"></script>
+
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" asp-append-version="true" />-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" asp-append-version="true" />
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js" asp-append-version="true"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" asp-append-version="true"></script>
+
+    <style>
+
+        body {
+            background-color: #eee
+        }
+    
+        .chat-btn {
+            right: 20px;
+            bottom: 20px;
+            cursor: pointer;
+            position: fixed;
+        }
+    
+        .chat-btn .close {
+            display: none
+        }
+    
+        .chat-btn i {
+            transition: all 0.9s ease
+        }
+    
+        #check:checked ~ .chat-btn i {
+            display: block;
+            pointer-events: auto;
+            transform: rotate(180deg)
+        }
+    
+        #check:checked ~ .chat-btn .comment {
+            display: none
+        }
+    
+        .chat-btn i {
+            font-size: 22px;
+            color: #fff !important
+        }
+    
+        .chat-btn {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50px;
+            background-color: #101010;
+            color: #fff;
+            font-size: 22px;
+            border: none
+        }
+    
+        .wrapper {
+            position: fixed;
+            right: 20px;
+            bottom: 80px;
+            width: 500px;
+            background-color: #fff;
+            border-radius: 5px;
+            opacity: 0;
+            transition: all 0.4s
+        }
+    
+        #check:checked ~ .wrapper {
+            opacity: 1
+        }
+    
+        .header {
+            padding: 5px;
+            background-color: #101010;
+            border-radius: 5px 5px 0px 0px;
+            /*margin-bottom: 10px;*/
+            color: #fff
+        }
+    
+        .chat-form {
+            padding: 15px
+        }
+    
+        .chat-form input,
+        textarea,
+        button {
+            margin-bottom: 10px
+        }
+    
+        .chat-form textarea {
+            resize: none
+        }
+    
+        .form-control:focus,
+        .btn:focus {
+            box-shadow: none
+        }
+    
+        .btn,
+        .btn:focus,
+        .btn:hover {
+            background-color: #101010;
+            border: #101010
+        }
+    
+        #check {
+            display: none !important
+        }
+    </style>
+
+    <script type="text/javascript">
+
+        /*
+        window.onload = function() {
+            if (localStorage) {
+                // LocalStorage is supported!
+                var myData = localStorage.getItem('chathistory');
+                if (myData != "undefined" || myData != "null") {
+                    $('#txtAnswer').val(myData);
+                }
+            }    
+        }
+        */
+
+        $(document).ready(function(){
+            /*
+            if (localStorage) {
+                // LocalStorage is supported!
+                var myData = localStorage.getItem('chathistory');
+                if (myData != "undefined" || myData != "null") {
+                    $('#txtAnswer').val(myData);
+                }
+            } 
+            */             
+            var text = document.getElementById('txtAnswer');
+            text.scrollTop = text.scrollHeight;
+        });
+
+        $(function() {
+            $('#btnEnter').bind('click', function() {
+                
+                var ext_msg = document.getElementById('txtAnswer').value;
+                ext_msg = (ext_msg == null ? "MPU  : Hello, how can I help you?" : ext_msg) + "\n";
+
+                var question = document.getElementById('txtQuestion').value;
+
+                if (question != ''){
+                    $.ajax({
+                        contentType: 'application/json; charset=UTF-8',
+                        method: "POST",
+                        url: "/predict",
+                        dataType: "json",
+                        data: JSON.stringify({ "message" : question }),
+                        success: function(result) {
+                            
+                            var ques = "You : " + question + "\n"
+                            var ans = "MPU : " + result.answer + "\n"
+
+                            $('#txtAnswer').val(ext_msg + ques + ans);
+                            $('#txtQuestion').val("");
+                            $('#txtQuestion').focus();
+                           
+                            var text = document.getElementById('txtAnswer'); 
+                            text.scrollTop = text.scrollHeight;
+
+                            // localStorage.setItem('chathistory', $('#txtAnswer').val());
+                        }
+                    });
+                }
+            });
+        });   
+
+    </script>    
+
+</head>
+
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top" style="v-align:middle;">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="/" class="navbar-brand" >
+                    <img alt="Myanmar Pioneer University" src="../static/img/images.png" width="25" height="25">
+                </a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="{{ url_for('home') }}">Home</a></li>
+                    <li><a href="{{ url_for('about') }}">About</a></li>
+                    <li><a href="{{ url_for('contact') }}">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container body-content">
+        {% block content %}{% endblock %}
+        <hr />
+        <footer style="position: fixed; left: 1; bottom: 0;">
+            <p><a href="/" class="navbar-brand" style="color:#222222;font-size:12px;">&copy; {{ year }} - Myanmar Pioneer University</a></p>
+        </footer>
+        <div>
+            <input type="checkbox" id="check">
+            <label class="chat-btn" for="check">
+                <i class="fa fa-commenting-o comment"></i>
+                <i class="fa fa-close close"></i>
+            </label>
+            <div class="wrapper">
+                <div class="header">
+                    <h6>Let's Chat - Online</h6>
+                </div>
+                <div class="chat-form">
+                    <textarea readonly="readonly" class="form-control" style="height: 200px; max-width:470px;text-align:justify;" placeholder="MPU : Hello, how can I help you?" id="txtAnswer">MPU : Hello, how can I help you?</textarea>            
+                    <textarea class="form-control" style="max-width: 470px" placeholder="Enter your questions!" id="txtQuestion"></textarea>
+                    <button id="btnEnter" class="btn btn-success btn-block">Enter</button>              
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/static/scripts/jquery-1.10.2.js"></script>
+    <script src="/static/scripts/bootstrap.js"></script>
+    <script src="/static/scripts/respond.js"></script>
+    {% block scripts %}{% endblock %}
+
+</body>
+</html>
+
+
+
+   

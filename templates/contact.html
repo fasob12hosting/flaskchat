@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}.</h2>
+
+<style>
+    body {
+        background-color: #eee
+    }
+</style>
+
+<address>
+    No.(1) Main Road , Kamayut Township,<br />
+    Yangon, Myanmar, 11401.<br />
+    <abbr title="Phone">P:</abbr>
+    +959-876-543-210
+    <br/>
+    Monday - Friday, 09:00 AM - 04:00 PM
+</address>
+
+<address>
+    <strong>Academic Affairs:</strong>   <a href="mailto:academicaffairs@mpu.edu.mm">academicaffairs@mpu.edu.mm</a><br />
+    <strong>Student Affairs:</strong> <a href="mailto:studentaffairs@mpu.edu.mm">studentaffairs@mpu.edu.mm</a>
+</address>
+
+{% endblock %}
