@@ -1,0 +1,685 @@
+{
+   "intents":[
+      {
+         "tag": "greeting",
+         "patterns": [
+           "Hi",
+           "Hey",
+           "How are you",
+           "Is anyone there?",
+           "Hello",
+           "Good day"
+         ],
+         "responses": [
+           "Hey :-)",
+           "Hello, thanks for visiting",
+           "Hi there, what can I do for you?",
+           "Hi there, how can I help?"
+         ]
+       },
+       {
+         "tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye"],
+         "responses": [
+           "See you later, thanks for visiting",
+           "Have a nice day",
+           "Bye! Come back again soon."
+         ]
+       },
+       {
+         "tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Thank's a lot!"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"]
+       },
+      {
+         "tag":"degree",
+         "patterns":[
+            "What majors available in MPU?",
+            "What degree program available?",
+            "What programs can have from MPU?",
+            "What diploma degree can have from MPU?"
+         ],
+         "responses":[
+            "The Myanmar Pioneer University offers undergraduate and postgraduate courses for bachelor`s, diploma, master`s and doctoral level students in a wide range of subject areas: software engineering, high performance computing, business information system, communication and networking, embedded systems and computer systems technology."
+         ]
+      },
+      {
+         "tag":"diploma",
+         "patterns":[
+            "What majors available for diploma program?",
+            "What subjects can take in diploma program?",
+            "Diploma program in MPU"
+         ],
+         "responses":[
+            "The Myanmar Pioneer University offers undergraduate and postgraduate courses for bachelor`s, diploma, master`s, and doctoral level students in a wide range of subject areas: software engineering, high performance computing, business information system, communication and networking, embedded systems and computer systems technology. Only Bachelor`s Degree holders with the IT related fields are allowed to apply for this course. The government employees need to submit the actual signature of the superior government officer. All students have to pass the entrance examination."
+         ]
+      },
+      {
+         "tag":"timeline_bachelor_degree",
+         "patterns":[
+            "How long does it take to complete degree program?",
+            "How long does it take to complete SE, BIS, KE, HPC, CN, ES, CSec program?",
+            "How long does it take to complete computer science degree?",
+            "How long does it take to complete bachelor`s degree program?"
+         ],
+         "responses":[
+            "The standard academic calendar consists of two semesters. The first semester of the academic year normally starts in December and ends in April. The second semester starts in May and finishes in September. The table below presents the basic chronological structure of the two main semesters in any academic year."
+         ]
+      },
+      {
+         "tag":"timeline_diploma_degree",
+         "patterns":[
+            "How long does it take to complete diploma program?",
+            "How long does it take to complete SE, BIS, KE, HPC, CN, ES, CSec diploma program?",
+            "How long does it take to complete computer science diploma degree?",
+            "How long does it take to complete bachelor`s degree diploma program?"
+         ],
+         "responses":[
+            "A post graduate diploma aims to provide a qualification typically awarded after a bachelor`s degree. The program is 42 weeks intensive sessions, including a required paid internship. It consists of a vocational course after an academic program. All university graduates are eligible to enroll and study for a postgraduate diploma. They have to complete 42 weeks intensive session in order to qualify for the PGD. Internships are paid. Our internship coordinator will work with students to secure the best internship for each individual. "
+         ]
+      },
+      {
+         "tag":"first_year",
+         "patterns":[
+            "Which subjects have to take on MPU First Year?",
+            "Which course will be available on MPU first year?",
+            "First year majors",
+            "Software Engineering First year majors",
+            "SE first year majors",
+            "Knowledge Engineering First year majors",
+            "KE first year majors",
+            "Business Information System First year majors",
+            "BIS first year majors",
+            "High Performance Computing First year majors",
+            "HPC first year majors",
+            "Embedded Systems and Computer Systems technology First year majors",
+            "ES first year majors",
+            "Communication and Networking First year majors",
+            "CN first year majors",
+            "Cyber Security First year majors",
+            "CSec first year majors"
+         ],
+         "responses":[
+            " The information below presents the subject syllabus structure of the two main semesters in any academic year. In first semester, Basic Data Structures (CST-11101), Calculus I (CST-11201), Digital Fundamentals of Computer System (CST-11401), English Language Proficiency I (CST-11501), Myanmar Literature (CST-11601), Myanmar Literature (CST-11601), Physics (CST-11701). In Second Semester, Programming in C++ (CST-12102), Calculus II (CST-12201), Web Technology (CST-12301), English Language Proficiency II (CST-12502), Myanmar Linguistics (CST-12602), Physics (Electromagnetism) (CST-12702)"
+         ]
+      },
+      {
+         "tag":"second_year",
+         "patterns":[
+            "Which subjects have to take on MPU Second Year?",
+            "Which course will be available on MPU second Year?",
+            "Second year majors",
+            "Software Engineering Second year majors",
+            "SE second year majors",
+            "Knowledge Engineering Second year majors",
+            "KE second year majors",
+            "Business Information System Second year majors",
+            "BIS second year majors",
+            "High Performance Computing Second year majors",
+            "HPC second year majors",
+            "Embedded Systems and Computer Systems technology Second year majors",
+            "ES second year majors",
+            "Communication and Networking Second year majors",
+            "CN second year majors",
+            "Cyber Security Second year majors",
+            "CSec second year majors"
+         ],
+         "responses":[
+            " The information below presents the subject syllabus structure of the two main semesters in any academic year. In first semester, Operating Systems Fundamentals (CST-21103), Calculus II (CST-21202), Software Modelling and Analysis (CST-21302), Introduction to Business and Fundamental of Information Systems (CST-21303), Basic Engineering CircMPU (CST-21402), English Language Proficiency III (CST-21503). In second semester, Data Structure and Algorithms with Java (CST-22104), Discrete Structure II (CST-22202), Human Computer Interaction & Information Security (CST-22304), Database Management System (CST-22305), Networking Fundamentals (CST-22403), English Language Proficiency IV (CST-22504)."
+         ]
+      },
+      {
+         "tag":"third_year_se",
+         "patterns":[
+            "Which subjects have to take on MPU Third Year SE?",
+            "Which course will be available on MPU third year SE?",
+            "SE third year majors",
+            "Software Engineering Third year majors"
+         ],
+         "responses":[
+            " The information below presents the subject syllabus structure of the two main semesters in any academic year. In first semester, Artificial Intelligence (CST-31105), Advanced Engineering Mathematics (CST-31203), Software Requirement Engineering (CST-31306), Advanced Web Technology (CS-31308), Advanced Networking (CST-31404), Computer Architecture (CST-31405). In second semester, Microservices for the Enterprise/ Introduction to entrepreneurship/ System Modelling and Analysis / Social Issues and Ethics (CS-32326/ CS-32327/ CS-32108/ CS-32109), Programming Languages Principles (CST-32106), Computer Organization (CST-32107), Linera Algebra (CST-32203), Management Principles & Engineering Economics (CST-32307), Network Design & Engineering (CST-32406)."
+         ]
+      },
+      {
+         "tag":"third_year_bis",
+         "patterns":[
+            "Which subjects have to take on MPU Third Year BIS?",
+            "Which course will be available on MPU third Year BIS?",
+            "BIS third year majors",
+            "Business Information Systems Third year majors"
+         ],
+         "responses":[
+            " The information below presents the subject syllabus structure of the two main semesters in any academic year. In first semester, Artificial Intelligence (CST-31105), Advanced Engineering Mathematics (CST-31203), Software Requirement Engineering (CST-31306), Advanced Web Technology (CS-31308), Advanced Networking (CST-31404), Computer Architecture (CST-31405). In second semester, Microservices for the Enterprise/ Introduction to entrepreneurship/ System Modelling and Analysis / Social Issues and Ethics (CS-32326/ CS-32327/ CS-32108/ CS-32109), Programming Languages Principles (CST-32106), Computer Organization (CST-32107), Linera Algebra (CST-32203), Management Principles & Engineering Economics (CST-32307), Network Design & Engineering (CST-32406)."
+         ]
+      },
+      {
+         "tag":"third_year_ke",
+         "patterns":[
+            "Which subjects have to take on MPU Third Year KE?",
+            "Which course will be available on MPU third Year KE?",
+            "KE third year majors",
+            "Knowledge Engineering Third year majors"
+         ],
+         "responses":[
+            " The information below presents the subject syllabus structure of the two main semesters in any academic year. In first semester, Artificial Intelligence (CST-31105), Advanced Engineering Mathematics (CST-31203), Software Requirement Engineering (CST-31306), Advanced Web Technology (CS-31308), Advanced Networking (CST-31404), Computer Architecture (CST-31405). In second semester, Microservices for the Enterprise/ Introduction to entrepreneurship/ System Modelling and Analysis / Social Issues and Ethics (CS-32326/ CS-32327/ CS-32108/ CS-32109), Programming Languages Principles (CST-32106), Computer Organization (CST-32107), Linera Algebra (CST-32203), Management Principles & Engineering Economics (CST-32307), Network Design & Engineering (CST-32406)."
+         ]
+      },
+      {
+         "tag":"third_year_hpc",
+         "patterns":[
+            "Which subjects have to take on MPU Third Year HPC?",
+            "Which course will be available on MPU third Year HPC?",
+            "HPC third year majors",
+            "High Performance Computing Third year majors"
+         ],
+         "responses":[
+            " The information below presents the subject syllabus structure of the two main semesters in any academic year. In first semester, Artificial Intelligence (CST-31105), Advanced Engineering Mathematics (CST-31203), Software Requirement Engineering (CST-31306), Advanced Web Technology (CS-31308), Advanced Networking (CST-31404), Computer Architecture (CST-31405). In second semester, Microservices for the Enterprise/ Introduction to entrepreneurship/ System Modelling and Analysis / Social Issues and Ethics (CS-32326/ CS-32327/ CS-32108/ CS-32109), Programming Languages Principles (CST-32106), Computer Organization (CST-32107), Linera Algebra (CST-32203), Management Principles & Engineering Economics (CST-32307), Network Design & Engineering (CST-32406)."
+         ]
+      },
+      {
+         "tag":"third_year_es",
+         "patterns":[
+            "Which subjects have to take on MPU Third Year ES?",
+            "Which course will be available on MPU third Year ES?",
+            "ES third year majors",
+            "Embedded System Third year majors"
+         ],
+         "responses":[
+            " The information below presents the subject syllabus structure of the two main semesters in any academic year. In first semester, Artificial Intelligence (CST-31105), Advanced Engineering Mathematics (CST-31203), Software Requirement Engineering (CST-31306), Engineering CircMPUs and Signals (CT-31407), Advanced Networking (CST-31404), Computer Architecture (CST-31405). In second semester, Programming Languages Principles (CST-32106), Computer Organization (CST-32107), Linera Algebra (CST-32203), Management Principles & Engineering Economics (CST-32307), Network Design & Engineering (CST-32406), Electronic Devices/ Data and Computer Communication (CT-32408/ CT-32409)."
+         ]
+      },
+      {
+         "tag":"third_year_cn",
+         "patterns":[
+            "Which subjects have to take on MPU Third Year CN?",
+            "Which course will be available on MPU third Year CN?",
+            "CN third year majors",
+            "Computer Networking Third year majors"
+         ],
+         "responses":[
+            " The information below presents the subject syllabus structure of the two main semesters in any academic year. In first semester, Artificial Intelligence (CST-31105), Advanced Engineering Mathematics (CST-31203), Software Requirement Engineering (CST-31306), Engineering CircMPUs and Signals (CT-31407), Advanced Networking (CST-31404), Computer Architecture (CST-31405). In second semester, Programming Languages Principles (CST-32106), Computer Organization (CST-32107), Linera Algebra (CST-32203), Management Principles & Engineering Economics (CST-32307), Network Design & Engineering (CST-32406), Electronic Devices/ Data and Computer Communication (CT-32408/ CT-32409)."
+         ]
+      },
+      {
+         "tag":"fourth_year_se",
+         "patterns":[
+            "Which subjects have to take on MPU Fourth Year SE?",
+            "Which course will be available on MPU fourth Year SE?",
+            "SE fourth year majors",
+            "Software Engineering Fourth year majors"
+         ],
+         "responses":[
+            " The information below presents the subject syllabus structure of the two main semesters in any academic year. In first semester, Analysis of Algorithms (CS-41110), Business Management Information Systems (CS-41310), Enterprise Systems, Security and Risk Management (CS-41311), Advanced Database Management System (CS-41312), Software Quality Management (CS-41313), English (CST-41505). In second semester, Software Construction & Evolution (CS-42317), Computer Vision (CS-42115), Mathematical Theory of Game (CS-42208), Distributed Programming (CST-42116), Data Analysis & Management (CST-42315), English Language Proficiency VI (CST-42506)."
+         ]
+      },
+      {
+         "tag":"fourth_year_bis",
+         "patterns":[
+            "Which subjects have to take on MPU Fourth Year BIS?",
+            "Which course will be available on MPU fourth Year BIS?",
+            "BIS fourth year majors",
+            "Business Information System Fourth year majors"
+         ],
+         "responses":[
+            " The information below presents the subject syllabus structure of the two main semesters in any academic year. In first semester, Business Information System Analysis and Design (BIS-41309), Business Management Information Systems (CS-41310), Enterprise Systems, Security and Risk Management (CS-41311), Advanced Database Management System (CS-41312), Software Quality Management (CS-41313), English Language Proficiency V (CST-41505). In Second semester, Modeling and Decision Analysis (BIS-42207), Marketing Principal & Software Business (BIS-42314), Business Process Management (BIS-42316), Software Construction and Evolution (CS-42317), Data Analysis and Management (CST-42315), English Language Proficiency VI (CST-42506)."
+         ]
+      },
+      {
+         "tag":"fourth_year_ke",
+         "patterns":[
+            "Which subjects have to take on MPU Fourth Year KE?",
+            "Which course will be available on MPU fourth Year KE?",
+            "KE fourth year majors",
+            "Knowledge Engineering Fourth year majors"
+         ],
+         "responses":[
+            " The information below presents the subject syllabus structure of the two main semesters in any academic year. In first semester, Analysis of Algorithms (CS-41110), Enterprise Systems, Security and Risk Management (CS-41311), Fuzzy Logic System (CST-41416), English Language Proficiency V (CST-41505), Computer Graphics (KE-41113), Knowledge Engineering and Intelligent Systems (KE-41114). In second semester, Computer Vision (CS-42115), Mathematical Theory of Game (CS-42208), Distributed Programming (CST-42116), Data Analysis and Management (CST-42315), English Language Proficiency VI (CST-42506), Robotic Systems (KE-42119)."
+         ]
+      },
+      {
+         "tag":"fourth_year_hpc",
+         "patterns":[
+            "Which subjects have to take on MPU Fourth Year HPC?",
+            "Which course will be available on MPU fourth Year HPC?",
+            "HPC fourth year majors",
+            "High Performance Computing Fourth year majors"
+         ],
+         "responses":[
+            " The information below presents the subject syllabus structure of the two main semesters in any academic year. In first semester, Analysis of Algorithms (CS-41110), Distributed Systems (CST-41111), Networking Managment and Monitoring (CST-41412), Cryptographic Techniques and Data Security (CST-41413), English Language Proficiency V (CST-41505), Introduction to High Performance Computing (HPC-41112). In second semester, Distributed Programming (CST-42116), Performance and Reliability Analysis (CST-42206), Data Analysis and Management (CST-42315), English Language Proficiency VI (CST-42506), Mobile and UbiqMPUous Computing (HPC-42117), High Performance Computing Technology (HPC-42118)."
+         ]
+      },
+      {
+         "tag":"fourth_year_es",
+         "patterns":[
+            "Which subjects have to take on MPU Fourth Year ES?",
+            "Which course will be available on MPU fourth Year ES?",
+            "ES fourth year majors",
+            "Embedded System Computing Fourth year majors"
+         ],
+         "responses":[
+            " The information below presents the subject syllabus structure of the two main semesters in any academic year. In first semester, Fuzzy Logic System (CST-41416), English Language Proficiency V (CST-41505), Mathematical Models of System and Control (ES-41204), Microcontroller Programming (ES-41417), Sensors & Electronics (ES-41418), Control System (ES-41419). In second semester, Data Analysis and Management (CST-42315), English Language Proficiency VI (CST-42506), VHDL Design & Modeling of Digital Systems (ES-42420), Applied Control Theory for Embedded System (ES-42421), Embedded System Architecture (ES-42422), Digital Signal Processing (ES-42423)."
+         ]
+      },
+      {
+         "tag":"fourth_year_cn",
+         "patterns":[
+            "Which subjects have to take on MPU Fourth Year CN?",
+            "Which course will be available on MPU fourth Year CN?",
+            "CN fourth year majors",
+            "Computer Networking Fourth year majors"
+         ],
+         "responses":[
+            " The information below presents the subject syllabus structure of the two main semesters in any academic year. In first semester, Network Operating System (CN-41410), Wireless and Mobile Communications (CN-41411), Distributed Systems (CST-41111), Network Management and Monitoring (CST-41412), Cryptographic Techniques and Data Security (CST-41413), English Language Proficiency V (CST-41505). In second semester, Multimedia Communications (CN-42414), Computer Security & Ethical Hacking (CN-42415), Distributed Programming (CST-42116), Performance and Reliability Analysis (CST-42206), Data Analysis and Management (CST-42315), English Language Proficiency VI (CST-42506)."
+         ]
+      },
+      {
+         "tag":"fourth_year_cbs",
+         "patterns":[
+            "Which subjects have to take on MPU Fourth Year (CSec) Cyber Security?",
+            "Which course will be available on MPU fourth Year (CSec) Cyber Security?",
+            "Fourth year majors (CSec) Cyber Security"
+         ],
+         "responses":[
+            " Course still developing."
+         ]
+      },
+      {
+         "tag":"fifth_year_se",
+         "patterns":[
+            "Which subjects have to take on MPU Fifth Year (SE) Software Engineering?",
+            "Which course will be available on MPU fifth Year (SE) Software Engineering?",
+            "Fifth year majors (SE) Software Engineering "
+         ],
+         "responses":[
+            " The information below presents the subject syllabus structure of the two main semesters in any academic year. In first semester, (CS-51120)Interactive Multimedia Systems, (CS-51322)Service Oriented Architecture: Concept & Technology (Capstone Project), (CST-51205)Stochastic Models, (SE-51323)Machine Learning with Data Visualization, (SE-51324)Advanced Software Engineering, (SE-51325)Data processing Techniques in Distributed Systems. In second semester all fifth year students must go to the Industrial Attachment (Internship)"
+         ]
+      },
+      {
+         "tag":"fifth_year_bis",
+         "patterns":[
+            "Which subjects have to take on MPU Fifth Year (BIS) Business Information System?",
+            "Which course will be available on MPU fifth Year (BIS) Business Information System?",
+            "Fifth year majors (BIS) Business Information System"
+         ],
+         "responses":[
+            " The information below presents the subject syllabus structure of the two main semesters in any academic year. In first semester, (BIS-51318)Business Intelligence, (BIS-51319)Information Systems Project Management, (BIS-51320)IT/IS Strategy, Management and Acquisition, (BIS-51321)Accounting for Managers, (CS-51322)Service Oriented Architecture: Concept & Technology (Capstone Project), (CST-51205)Stochastic Models. In second semester all fifth year students must go to the Industrial Attachment (Internship). "
+         ]
+      },
+      {
+         "tag":"fifth_year_ke",
+         "patterns":[
+            "Which subjects have to take on MPU Fifth Year (KE) Knowledge Engineering?",
+            "Which course will be available on MPU fifth Year (KE) Knowledge Engineering?",
+            "Fifth year majors (KE) Knowledge Engineering "
+         ],
+         "responses":[
+            " The information below presents the subject syllabus structure of the two main semesters in any academic year. In first semester (CS-51120)Interactive Multimedia Systems, (CST-51205)Stochastic Models, (KE-51126)Computational Linguistics, (KE-51127)Data Science for Business, (KE-51128)Semantic Web and Ontology Engineering, (KE-51129)Design, Concepts and Methodology for Knowledge-based Intelligent Systems (Capstone Project). In second semester all fifth year students must go to the Industrial Attachment (Internship). "
+         ]
+      },
+      {
+         "tag":"fifth_year_hpc",
+         "patterns":[
+            "Which subjects have to take on MPU Fifth Year (HPC) High Performance Computing?",
+            "Which course will be available on MPU fifth Year (HPC) High Performance Computing?",
+            "Fifth year majors (HPS) High Performance Computing "
+         ],
+         "responses":[
+            " The information below presents the subject syllabus structure of the two main semesters in any academic year. In first semester, (CST-51121)Data Center Networking and the New Converged Internet, (CST-51205)Stochastic Models, (HPC-51122)Virtualization Technology and Cloud Computing, (HPC-51123)Blockchain Technology and the Internet of Things, (HPC-51124)High Performance Big Data Analytics, (HPC-51125)Design and Concepts for Building a Modern Computing System (Capstone Project). In second semester all fifth year students must go to the Industrial Attachment (Internship). "
+         ]
+      },
+      {
+         "tag":"fifth_year_es",
+         "patterns":[
+            "Which subjects have to take on MPU Fifth Year (ES) Embedded Systems?",
+            "Which course will be available on MPU fifth Year (ES) Embedded Systems?",
+            "Fifth year majors (ES) Embedded System "
+         ],
+         "responses":[
+            " The information below presents the subject syllabus structure of the two main semesters in any academic year. In first semester, (CST-51205)Stochastic Models, (CT-51427)Digital Forensics, (ES-51428)VLSI Technology & Design, (ES-51429)Neural Network, (ES-51430)Computer Vision and Digital Image Processing, (ES-51431)Designing Embedded System Using Real Time OS & Robotics (Capstone Project). In second semester all fifth year students must go to the Industrial Attachment (Internship). "
+         ]
+      },
+      {
+         "tag":"fifth_year_cn",
+         "patterns":[
+            "Which subjects have to take on MPU Fifth Year (CN) Communication and Networking?",
+            "Which course will be available on MPU fifth Year (CN) Communication and Networking?",
+            "Fifth year majors (CN) Communication and Networking "
+         ],
+         "responses":[
+            " The information below presents the subject syllabus structure of the two main semesters in any academic year. In first semester, (CN-51424)Network and Internet Security, (CN-51425)Broadband Communication and Mobile Networking, (CN-51426)Advanced Network Design and Performance Computing (Capstone Project), (CST-51121)Data Center Networking and the New Converged Internet, (CST-51205)Stochastic Models, (CT-51427)Digital Forensics. In second semester all fifth year students must go to the Industrial Attachment (Internship). "
+         ]
+      },
+      {
+         "tag":"fifth_year_csec",
+         "patterns":[
+            "Which subjects have to take on MPU Fifth Year (CSec) Cyber Security?",
+            "Which course will be available on MPU fifth Year (CSec) Cyber Security?",
+            "Fifth year majors (CSec) Cyber Security"
+         ],
+         "responses":[
+            " Course still developing."
+         ]
+      },
+      {
+         "tag":"under_graduate_diploma_majors",
+         "patterns":[
+            "Which subjects have to take on MPU Under Graduate Diploma in Information Technology (Dip.IT)?",
+            "Which course will be available on MPU under graduate diploma in information technology (Dip.IT)?",
+            "subjects/course in Under Graduate Diploma (Dip.IT)"
+         ],
+         "responses":[
+            "For FC Courses, Calculus (Dip-01201), Discrete (Dip-01202), Algebra & Probability (Dip-01203), Numerical Analysis (Dip-01204), Graph & Linear Programming (Dip-02205) and Inventory Control, Queuing Theory & Game Theory (Dip-02206) subjects are available. For FCS courses, Computer Applications Technology– Word, Excel, Desktop Presentation: Power Point (Dip-01101), Data Structure Fundamentals (Dip-01102), Operating System and Configuration (Dip-01103), Desktop Application Development (C++, Java) (Dip-01104), Human Interface Design & Technology (Multimedia Interface) (Dip-02105), Data Structure &  Algorithms (Dip-02106), Programming Languages & Type of Language Processors (Dip-02107) and Artificial Intelligent / AI Technologies (Dip-0108) are available. For FIS courses, Database Technology (Dip-01301), Coporate Accounting, Ethics and Legal Affair (Dip-01302), Business and System Strategy (Dip-01303), Coporate Activities & Project Management (Dip-01304), Business Process Management & eBusniess (Dip-02305), Software Development Methodologies (Dip-02306), Service Management and System Audit (Dip-02307), Web Application Development (HTML5, CSS, JavaScript, PHP) (Dip-02308) subjects are available. For FCST courses, Introduction to Computer System (Dip-01401), Computer Networking (Dip-01402), Security (Dip-01403), Advanced Computer Networking (Dip-02404), Computer Network Security (Dip-02405) courses are available."
+         ]
+      },
+      {
+         "tag":"post_graduate_diploma_majors_for_web_engineering",
+         "patterns":[
+            "Which subjects have to take on MPU Post Graduate Diploma for Web Engineering?",
+            "Which course will be available on MPU post graduate diploma for web engineering?",
+            "subjects/course in Post Graduate Diploma for Web Engineering"
+         ],
+         "responses":[
+            "The faculty of MPU offers post graduate diploma in the following subjects: Web System Development, Operation System Management, Basic Web Programming, Human Computer Interaction, Database Design and Development, Client-Side Web Programming, Ajax and Web Service, Advanced Web Programming (PHP, Joomala), Web System Design Architecture, Project Management, Advanced Web Programming using Java Technology (MVC, Multi-tier , OR Mapping), E-Business Technique, Performance Computing, Android Application Development, Internal Project (Individual & Group) and 12-week paid Internship included."
+         ]
+      },
+      {
+         "tag":"post_graduate_diploma_majors_for_network_engineering",
+         "patterns":[
+            "Which subjects have to take on MPU Post Graduate Diploma for Network Engineering?",
+            "Which course will be available on MPU post graduate diploma for network engineering?",
+            "subjects/course in Post Graduate Diploma for Network Engineering"
+         ],
+         "responses":[
+            "The Postgraduate Diploma program aims to impart the skill and knowledge to graduates who wish to broaden their knowledge in the subject they studied at undergraduate level. During the network engineering course, the students will receive internship opportunities with an employer so they can get some really good experience in the workplace. Network Engineers are involved in the design and maintenance of the hardware and software necessary for a computer network. A network engineer is a highly specialized individual who deals with all aspects of networks and cloud computing. The course is a 10-month program including 12-week internship sessions."
+         ]
+      },
+      {
+         "tag":"se_career",
+         "patterns":[
+            "What opportunities available in Software Engineering?",
+            "What careers available after SE degree?",
+            "Software Engineering Career",
+            "What are the career paths for SE?",
+            "se career"
+         ],
+         "responses":[
+            " After finished Bachelor of Computer Science in Software Engineering, you can work as a Software Engineer or Project Manager or System Analysts or Software Developer / Programmer or Software Tester or Technical Support or Middle ware Analyst."
+         ]
+      },
+      {
+         "tag":"bis_career",
+         "patterns":[
+            "What opportunities available in Business Information Systems?",
+            "What careers available after BIS degree?",
+            "Business Information Systems Career",
+            "What are the career paths for BIS?",
+            "bis career"
+         ],
+         "responses":[
+            " After finished Bachelor of Computer Science in Business Information Systems, you can work as a Business Process Analyst or Project Manager or System Analysts or IT Consultant or Information System Manager or Quality Control managers or Application Engineers and more."
+         ]
+      },
+      {
+         "tag":"ke_career",
+         "patterns":[
+            "What opportunities available in Knowledge Engineering?",
+            "What careers available after KE degree?",
+            "Knowledge Engineering Career",
+            "What are the career paths for KE?",
+            "ke career"
+         ],
+         "responses":[
+            " After finished Bachelor of Computer Science in Knowledge Engineering, you can work as an Search Engine & Game Developer or Knowledge Architect or Expert & Robotic System Developer or Linguistics Experts or Computer Graphic System Developer or Simulator System Developer."
+         ]
+      },
+      {
+         "tag":"hpc_career",
+         "patterns":[
+            "What opportunities available in High Performance Computing?",
+            "What careers available after HPC degree?",
+            "What are the career paths for HPC?",
+            "High Performance Computing Career",
+            "hpc career"
+         ],
+         "responses":[
+            " After finished Bachelor of Computer Science in High Performance Computing, you can work as a System Engineer or IT Engineer in Data Center or High Performance Computing (HPC) Test Engineer or Technical Consulting on HPC System or HPC Software Engineer or HPC System Solution Architect or HPC Applications Engineer or HPC System Administrator or Mobile Application Developer (in the Cloud) or Big Data Application Developer or Cloud Specialist Architect."
+         ]
+      },
+      {
+         "tag":"cn_career",
+         "patterns":[
+            "What opportunities available in Computer Networking?",
+            "What careers available after CN degree?",
+            "Computer Networking Career",
+            "What are the career paths for CN?",
+            "cn career"
+         ],
+         "responses":[
+            " After finished Bachelor of Computer Science in Computer Networking, you can work as an IT Manager or IT Engineer or Management Consulting or Network Analyzer or Telecommunication Engineer or Networking professionals or Network Expert."
+         ]
+      },
+      {
+         "tag":"es_career",
+         "patterns":[
+            "What opportunities available in Embedded System?",
+            "What careers available after ES degree?",
+            "Embedded System Career",
+            "What are the career paths for ES?",
+            "es career"
+         ],
+         "responses":[
+            " After finished Bachelor of Computer Science in Embedded System, you can work as an System Engineer or System Validation Firmware Design Engineer or System Software Engineer or Application Software Engineer or Firmware Engineer or Application Engineer or Security and Firmware Architect or Embedded Firmware Architect."
+         ]
+      },
+      {
+         "tag":"csec_career",
+         "patterns":[
+            "What opportunities available in Cyber Security?",
+            "What careers available after CSec degree?",
+            "Cyper Security Career",
+            "What are the career ptaths for CSec?",
+            "csec career"
+         ],
+         "responses":[
+            " After finished Bachelor of Computer Science in Cyber Security, you can work as an Cyber Security Architect or Cyber Security Administrator or Information Security Analyst or Computer and Information system manager or Network Security analyst or Cybersecurity Engineer or Cybersecurity Analyst or Information Security officer or Penetration Tester/Ethical hacker or Cybersecurity Specialist."
+         ]
+      },
+      {
+         "tag":"academic_rules",
+         "patterns":[
+            "What are academic rules?",
+            "What rules have to follow to accomplish the degree programs?",
+            "What rules have to follow to accomplish the diploma programs?"
+         ],
+         "responses":[
+            "MPU uses a Semester-wise Credit System. For more details, please contact MPU student affairs."
+         ]
+      },
+      {
+         "tag":"industry_collaboration",
+         "patterns":[
+            "What kind of collaborations are available for industry?",
+            "Industry Collaboration"
+         ],
+         "responses":[
+            "MPU has established academic collaboration with the following industries: Fujitsu Limited, Japan OAS Corporation Ltd., Japan, Cross-border International Education Support Foundation (CIESF), Japan, Hitachi Limited, Japan, Acroquest Myanmar Co., Ltd., Japan, International Electric Vehicle Expo Organizing Committee (IEVEOC) – Korea, Myanmar Electrical and Electronic Association-Myanmar, Access Spectrum."
+         ]
+      },
+      {
+         "tag":"university_collaboration",
+         "patterns":[
+            "What kind of collaborations are available for universities?",
+            "University Collaboration"
+         ],
+         "responses":[
+            "MPU has established academic collaboration with the following universities: Japan Advanced Institute of Science and Technology (JAIST), Saitama University, Japan, Nagaoka University of Technology, Japan, Okayama University, Japan, Aoyama Gakuin University, Japan, The Faculty of Engineering, University of the Ryukyus, Japan, Graduate School of International Management, International University of Japan (IUJ), Japan, Kwangwoon University, Korea, Korea Aerospace University, Korea, Dongseo University, Korea, Busan Digital University, Korea, Jeju National University, Korea, Suan Sunandha Rajabhat University, Thailand, Malaysia University of Science and Technology (MUST), Malaysia, Nagoya Institute of Technology."
+         ]
+      },
+      {
+         "tag":"admission_requirements",
+         "patterns":[
+            "What are the requirements for student registrations?",
+            "admission requirements",
+            "student registration requirements"
+         ],
+         "responses":[
+            "The students are to get at least 450 marks in the Matriculation Examination to apply to the MPU. The candidates from all over Myanmar are applicable. The time to join this university is in December. The basic requirements are 4 photographs of the applicant, copies and the original NRC of the applicant and copies of parents` NRC and Copy and Original of Matriculation Exam Mark Receipt."
+         ]
+      },
+      {
+         "tag":"research_labs",
+         "patterns":[
+            "What labs are available in MPU?",
+            "What kind of researches are on-going?",
+            "research labs"
+         ],
+         "responses":[
+            "In MPU, these research labs are on-going. Cloud Computing System (CCS) lab, Data Analysis and Managment (DAM) lab, Digital Signal Processing (DSP) lab, Knowledge Engineering (KE) lab, Data Computing (DC) lab, Artificial Intelligence (AI) lab, Internet of Things (IOT) lab, Enterprise Software Engineering (SE) lab, High Performance Computing (HPC) lab, Communication and Networking (CN) lab, Science of Data: Computing and Algorithm (CA) lab and Business Information System (BIS) labs."
+         ]
+      },
+      {
+         "tag":"cloud_computing_system_lab",
+         "patterns":[
+            "What is Cloud Computing System lab (CCS)?",
+            "What cloud computing system lab (CCS) provided?",
+            "cloud computing system lab (ccs)"
+         ],
+         "responses":[
+            "The mission of the Cloud Computing System (CCS) lab are to manage transformative research on the Cloud ecosystem and improve innovative technologies and to gain knowledge from MPU students about various features of Cloud Computing platform such as Amazon Web Service (AWS), Google App Engine, Microsoft Windows Azure and open-source software platforms and solve Big Data and Big Compute problems of Today. Topic research are Mobile Cloud Computing, Encrytpion, Data security, Big Data Analytics, Big Data Clustering, Virtual Computing and Infrastructure Management for the Services."
+         ]
+      },
+      {
+         "tag":"data_analysis_and_management_lab",
+         "patterns":[
+            "What is Data Analysis and Management (DAM) lab?",
+            "What Data Analysis and Management lab (DAM) provided?",
+            "data analysis and management lab (dam)"
+         ],
+         "responses":[
+            "Data Analysis and Management (DAM) research lab intends to support data analysis solutions which are needed by academic and governmental sectors as well as industrial sector. Research areas are Tex Mining and Analytics, Data Analytics and Learning and Big Data Analytics."
+         ]
+      },
+      {
+         "tag":"digital_signal_processing_lab",
+         "patterns":[
+            "What is Digital Signal Processing (DSP) lab?",
+            "What Digital Signal Processing (DSP) lab provided?",
+            "digital signal processing (dsp) lab"
+         ],
+         "responses":[
+            "The mission of Digital Signal Processing (DSP) lab are to analyze and design systems employing digital signal processing techniques and to provide the extensive use of MATLAB based examples that illustrate the program’s powerful capability to solve signal processing problems. Research topcis are video processing, image processing and speech recognition."
+         ]
+      },
+      {
+         "tag":"knowledge_engineering_lab",
+         "patterns":[
+            "What is Knowledge Engineering (KE) lab?",
+            "What Knowledge Engineering (KE) lab provided?",
+            "knowledge engineering (ke) lab"
+         ],
+         "responses":[
+            "The mission of Knowledge Engineering (KE) lab are to develop concepts of knowledge engineering and intelligent system and train data and knowledge management skills to MPU students and to attempt to take on challenges and solve problems that would usually require a high level of human expertise to solve. Research topics are Linguistics: Knowledge Engineering for NLP, Semantic Web and Ontology Engineering, Agents Programming (Aglets/JADE), Co-word Analysis and Information and knowledge engineering."
+         ]
+      },
+      {
+         "tag":"data_communication_lab",
+         "patterns":[
+            "What is Data Communication (DC) lab?",
+            "What Data Communication (DC) lab provided?",
+            "data communication (dc) lab"
+         ],
+         "responses":[
+            "The mission of Data Communication (DC) lab are to know ethical hacking methodology, generalized exploit techniques, basic network concepts, networking vulnerabilities and countermeasures and to develop main cryptographic methods for communication and computer system security. Research topics are wireless sensor networks, computer network security, Cryptography, Cloud Computing Networking, Network Security & Management and Distributed Processing & Networks."
+         ]
+      },
+      {
+         "tag":"artificial_intelligence_lab",
+         "patterns":[
+            "What is Artificial Intelligence (AI) lab?",
+            "What Artificial Intelligence (AI) lab provided?",
+            "artificial intelligence (ai) lab"
+         ],
+         "responses":[
+            "The mission of Artificial Intelligence (AI) lab are to overcome language barriers by Machine translation and the resources of Myanmar NLP from MPU AI Lab can be used freely for educational purposes, other research users and many other related fields. Research topics are Myanmar to English Machine Translation, Myanmar Information Retrieval, Myanmar Text Summarization, Myanmar Text Categorization, Myanmar Word Sense Disambiguation, Myanmar Search Engine and Myanmar OCR (including Handwritten Recognition)."
+         ]
+      },
+      {
+         "tag":"internet_of_things_lab",
+         "patterns":[
+            "What is Internet of Things (IoT) lab?",
+            "What Internet of Things (IoT) lab provided?",
+            "internet of things (iot) lab"
+         ],
+         "responses":[
+            "The mission of Internet of Things (Iot) lab are to enable faculty learning, research and hands-on experimentation to discover and demonstrate the promise of the Internet of Things and to impart fundamental and advanced training on IoT to upcoming students. Research topics are Smart Car-parking System, Flood Monitoring System and Smart Home System."
+         ]
+      },
+      {
+         "tag":"enterprise_software_engineering_lab",
+         "patterns":[
+            "What is Enterprise Software Engineering (SE) lab?",
+            "What Enterprise Software Engineering (SE) lab provided?",
+            "enterprise software engineering (se) lab"
+         ],
+         "responses":[
+            "The aim of Internet of Things (Iot) lab is to develop a broad understanding of the discipline of software engineering and to understand the issues affecting the organization, planning and control of software-based system development. Research areas are software size estimation, requirements, including safety and quality requirements, software modeling and architecture, safety/ security analysis of intelligent systems / sociotechnical systems, machine learning, including reinforcement learning and deep learning, software verification and model checking using formal method."
+         ]
+      },
+      {
+         "tag":"high_performance_computing_lab",
+         "patterns":[
+            "What is High Performance Computing (HPC) lab?",
+            "What High Performance Computing (HPC) lab provided?",
+            "high performance computing (hpc) lab"
+         ],
+         "responses":[
+            "The aim of High Performance Computing (HPC) lab is to provide to write faster code for modern multi-core processors and clusters and to provide to write faster code for modern multi-core processors and clusters. Topics of research are Parallel & Distributed Systems, Parallel and Distributed Computing, Mobile and UbiqMPUous Computing, Computer Network and Management and Distributed System and Distributed Programming."
+         ]
+      },
+      {
+         "tag":"communication_and_networking_lab",
+         "patterns":[
+            "What is Communication and Networking (CN) lab?",
+            "What Communication and Networking (CN) lab provided?",
+            "communication and networking (cn) lab"
+         ],
+         "responses":[
+            "The aim of Communication and Networking (CN) lab is to identify the components required to build different types of networks and to understand how the data transferred from source to destination. The objectives of this lab are to understand fundaments underlying principles of computer networking, to understanding details and functionality of layered network architecture, to analyze performance of various communication protocols and to practice packet/file transmission between nodes."
+         ]
+      },
+      {
+         "tag":"science_of_data_lab",
+         "patterns":[
+            "What is Science of Data: Computing and Algorithm (SoD) (CA) lab?",
+            "What Science of Data: Computing and Algorithm (SoD) (CA) lab provided?",
+            "science of data: computing and algorithm (sod) (ca) lab",
+            "science of data (sod) (ca) lab"
+         ],
+         "responses":[
+            "The vision of Science of Data: Computing and Algorithm (SoD) or (CA) lab is soul of science research. The mission is to provide quality, affordable, and sustainable data science and provide science and technology advances including research, education and service. Topics of research are Managing and analyzing big data, Statistical Thinking, creating algorithms and computing, solving real-life problems using machine learning."
+         ]
+      },
+      {
+         "tag":"business_information_system_lab",
+         "patterns":[
+            "What is Business Information System (BIS) lab?",
+            "What Business Information System (BIS) lab provided?",
+            "business information system (bis) lab"
+         ],
+         "responses":[
+            "The mission of Business Information System (BIS) lab are to provide students from all business disciplines with a general background of BIS and to demonstrate an understanding of the foundations of information systems and explain the reasons for the current design and use of information systems. Topics of research are Business intelligence, Digital innovation, transformation and disruption, E-Commerce, Mobile-Commerce, Data privacy and Enterprise systems."
+         ]
+      },
+      {
+         "tag":"libraly",
+         "patterns":[
+            "What is opening hours of MPU library?",
+            "MPU library",
+            "library opening hours"
+         ],
+         "responses":[
+            "The Myanmar Pioneer University is open from Monday to Friday. January to December: 9 a.m. to 4 p.m. The faculty members, students, and staff from Myanmar Pioneer University are entitled to membership of the MPU Library. New members will need to register at the library by completing a registration form. The following documentation is also required Student/Staff ID Card and One Passport Photo. Types of Members are Faculty Member, Admin/Professional Staff, Non-Academic and Students. As study space, allow for both individual and group work are available, provided desks for study, research, writing and discussion, provided more than 20 sets of laptops are provided for study, research and writing."
+         ]
+      }
+   ]
+}
