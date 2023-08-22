@@ -64,10 +64,7 @@ def predict():
     request_data = request.get_json()
     text = request_data['message']
     response = get_response(text)
-    message = {"answer":response}
-    
-    print(message)
-    
+    message = {"answer":response}    
     return jsonify(message)
 
 if __name__ == "__main__":
