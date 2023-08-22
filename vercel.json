@@ -1,7 +1,5 @@
 {
-    "features": {
-        "cloud": "v1"
-    },  "version": 2,
+    "version": 2,
     "builds": [
         {
             "src": "./app.py",
