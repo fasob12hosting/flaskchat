@@ -12,6 +12,15 @@ app = Flask(__name__)
 # def index():
 #     return 'Hello, World!'
 
+@app.route('/download_pdf')
+def download_pdf():
+    """Renders the home page."""
+    return render_template(
+        'download_pdf.html',
+        title='Download Pdf Page',
+        year=datetime.now().year,
+    )
+
 @app.route('/index')
 def index():
     """Renders the home page."""
